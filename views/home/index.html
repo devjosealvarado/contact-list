@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home - Contactos</title>
+</head>
+
+<body class="pt-20 bg-slate-50 dark:bg-slate-800 h-screen">
+  <!-- Nav-bar -->
+  <nav
+    class="fixed top-0 left-0 right-0 flex flex-row justify-between h-20 items-center bg-slate-50 dark:bg-slate-800 px-4">
+    <p class="font-bold text-lg dark:text-white text-slate-800">Contact List</p>
+    <div class="flex gap-4 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6 md:hidden text-slate-800 dark:text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      <div id="menu-bar" class="fixed top-20 right-0 bottom-0 w-full hidden">
+        <div class="absolute top-0 bottom-0 left-0 right-0 w-full bg-black bg-opacity-70 z-0">
+        </div>
+
+        <div id="menu-mobile"
+          class="absolute top-0 bottom-0 right-0 bg-red-500 z-10 w-0 transition-all ease-in-out duration-300">
+          <a href="/">Home</a>
+          <a href="/login">Login</a>
+          <a href="/signup">Registro</a>
+          <a href="/app">App</a>
+        </div>
+      </div>
+      <a class="hidden md:block" href="/">Home</a>
+      <a class="hidden md:block text-slate-800 dark:text-white" href="/login">Login</a>
+      <a class="hidden md:block text-slate-800 dark:text-white" href="/signup">Registro</a>
+      <a class="hidden md:block text-slate-800 dark:text-white" href="/app">App</a>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <section
+    class="flex h-full flex-col justify-center items-center gap-4 bg-slate-50 dark:bg-slate-800 p-4 md:w-6/12 mx-auto">
+    <h1 class="text-white text-4xl md:text-7xl uppercase text-center w-full">Contact List</h1>
+    <div class="flex flex-col text-white text-xl text-center gap-4 w-full">
+      <p>Una agenda de contactos online completamente funcional. Esta aplicacion web te permite agregar, editar y borrar tus contactos.</p>
+      <a class="bg-rose-600 py-2 text-base px-4 rounded-lg hover:bg-rose-700 uppercase font-medium" id="main-btn"
+        href="/signup">Registrate </a>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>

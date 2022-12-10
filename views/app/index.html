@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Contact List</title>
+</head>
+<body>
+    
+    <div id="contenedor">
+        <nav>
+            <div>
+                <button id="btn-logout">Cerrar sesión</button>
+            </div>
+        </nav>
+        <h1>Guía Telefónica</h1>
+        <form id="formulario">
+            <!-- <div class="" id="header"> -->
+                <input type="text" id="nombre-text" placeholder="Nombre">
+                <input type="tel" id="numero" placeholder="Numero: 123-1234567" maxlength="11">
+                <button type="submit" id="create">➕</button>
+            <!-- </div> -->
+        </form>
+
+        <ul class="" id="lista">
+            <!-- <li class="contacto-item">
+                <p>Jose</p>
+                <p class="number">123-1234567</p>
+                <button class="btn-deleted">✖</button>
+                <button class="btn-edit">v</button> 
+            </li> -->
+        </ul>
+    </div>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
